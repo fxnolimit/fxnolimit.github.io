@@ -8,6 +8,7 @@ header {
 
 main {
     background-color: rgb(172, 211, 198);
+    padding-bottom: 5px;
 }
 
 footer {
@@ -44,6 +45,10 @@ img.center {
     margin: 0 auto;
     padding-top: 20px;
    
+}
+img.logo {
+    height: 300px;
+    width: 500px;
 }
 
 .left {
