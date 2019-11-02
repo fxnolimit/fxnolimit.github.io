@@ -7,6 +7,11 @@ header {
     
 }
 
+h2 {
+    color: brown;
+
+}
+
 main {
     background-color: rgb(172, 211, 198);
     padding-bottom: 5px;
@@ -36,8 +41,8 @@ nav ul {
 nav li {
     display: inline;
     padding-left: 100px; 
-      
 }
+
 img {
     height: 400px;
     width: 350px;
@@ -78,8 +83,8 @@ img.logo {
 
 .li-padding {
     padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     border: 10px teal;    
     border-radius: 22px;
     background-color: rgb(148, 255, 193)
