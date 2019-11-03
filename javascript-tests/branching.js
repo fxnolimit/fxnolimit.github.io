@@ -1,11 +1,11 @@
 let height = 5;
-if (height >= 5){
+if (height >= 25){
     console.log("a big one")
 }
 
 
 height = 5;
-if (height >= 5){
+if (height >= 25){
     console.log("a big one")
 }
 else {
@@ -13,7 +13,7 @@ else {
 }
 
 height = 5;
-if (height >= 5){
+if (height >= 25){
     console.log("a big one")
 }
 else if (height >= 0) {
@@ -42,7 +42,7 @@ window.onload = () => {
     
     simpleBranchAction.onclick = (event) => {
         let height = 4;
-        if (height >= 5) {
+        if (height >= 25) {
             simpleBranchDisplay.textContent = 'We have a big one';
         } else {
             simpleBranchDisplay.textContent = 'We have a little one';
