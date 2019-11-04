@@ -12,6 +12,12 @@ console.log(numbers[0]);
 console.log("Length:", numbers.length);
 console.log("Number 3:", numbers[numbers.length - 1]);
 
+const files = ["bundle.js", "*.js.map", ".c9"];
+console.log(files.join(', '))
+
+const filesNames = "bundle.js, *.js.map, .c9";
+console.log(filesNames.split(','));
+
 const items = [1, 'two', [3, 4], false, null];
 console.log(items);
 divider();
