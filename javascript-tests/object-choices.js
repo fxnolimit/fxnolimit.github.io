@@ -1,3 +1,18 @@
+function loader() {
+    const  =
+        document.getElementById('feetToAction');
+    const milesToFeetAction =
+        document.getElementById('milesToFeetAction');
+    const triangleAction =
+        document.getElementById('areaOfTriangleAction');
+    const circleAction =
+        document.getElementById('areaOfCircleAction');
+
+};
+
+
+window.onload = loader();
+
 const simpleObject = {
     sayName: function () {
         console.log("Simple object.");
@@ -30,7 +45,7 @@ console.log(obj.dynamicProto());
 console.log(obj.constructor.toString());
 
 
-class print {
+class custom {
     constructor(word) {
         this.word = word;
     }
@@ -40,5 +55,5 @@ class print {
     }
 };
 
-let myWord = new print("my word");
+let myWord = new custom("my word");
 myWord.printMe();
