@@ -78,5 +78,4 @@ window.onload = () => {
         let customizedObj = new custom("custom object");
         customClassDisplay.textContent = customizedObj.printMe();
     };
-
 };
