@@ -46,6 +46,12 @@ class custom {
 let myWord = new custom("my word");
 myWord.printMe();
 
+
+function customWorkAround(word) {
+    let custom = new custom("custom class");
+
+}
+
 window.onload = () => {
 
     const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
@@ -69,8 +75,8 @@ window.onload = () => {
     };
 
     customClassAction.onclick = () => {
-        let custom = new custom("custom class");
-        customClassDisplay.textContent = custom.printMe();
+        let customizedObj = new custom("custom object");
+        customClassDisplay.textContent = customizedObj.printMe();
     };
 
 };
