@@ -1,21 +1,8 @@
-function loader() {
-    const  =
-        document.getElementById('feetToAction');
-    const milesToFeetAction =
-        document.getElementById('milesToFeetAction');
-    const triangleAction =
-        document.getElementById('areaOfTriangleAction');
-    const circleAction =
-        document.getElementById('areaOfCircleAction');
-
-};
-
-
-window.onload = loader();
-
 const simpleObject = {
     sayName: function () {
-        console.log("Simple object.");
+        var label = "Simple object.";
+        console.log(label);
+        return label;
     }
 };
 
@@ -52,8 +39,38 @@ class custom {
 
     printMe() {
         console.log(this.word);
+        return this.word;
     }
 };
 
 let myWord = new custom("my word");
 myWord.printMe();
+
+window.onload = () => {
+
+    const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
+    const functionObjectDisplay = document.getElementById('functionObjectDisplay');
+    const customClassDisplay = document.getElementById('customClassDisplay');
+
+    const simpleObjectAction =
+        document.getElementById('simpleObjectAction');
+    const functionObjectAction =
+        document.getElementById('functionObjectAction');
+    const customClassAction =
+        document.getElementById('customClassAction');
+
+    simpleObjectAction.onclick = () => {
+        simpleObjectDisplay.textContent = simpleObject.sayName();
+    };
+
+    functionObjectAction.onclick = () => {
+        let obj = new FunctionObject();
+        functionObjectDisplay.textContent = obj.proto();
+    };
+
+    customClassAction.onclick = () => {
+        let custom = new custom("custom class");
+        customClassDisplay.textContent = custom.printMe();
+    };
+
+};
